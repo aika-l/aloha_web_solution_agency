@@ -1,0 +1,147 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 15px; */
+    line-height: 1.5;
+}
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+/* Showcase */
+#showcase{
+    min-height: 420px;
+    background: url(https://cf.ltkcdn.net/web-design/images/orig/204538-2261x1326-HTML.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    padding-bottom: 30px;
+}
+#showcase h1{
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+#showcase button{
+    color:rgb(255, 255, 255);
+    background-color: rgb(48, 47, 47);
+    border: solid 1px rgb(255, 255, 255);
+    padding: 20px 30px;
+    font-size: 18px;
+}
+#showcase button:hover{
+    color: rgb(48,47,47);
+    background-color:rgb(255, 255, 255);
+}
+/* Services */
+#services{
+    padding: 15px 0 35px 0;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+}
+.content{
+    columns: 2;
+    column-gap: 2%;
+}
+.content p{
+    margin: 0;
+}
+/* Boxes */
+#boxes{
+    background-color:rgb(48, 47, 47);
+}
+#options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:  30px 0 30px 0;
+}
+.box img{
+    width: 100%;
+    height: auto;
+}
+.box{
+    background-color: #ffffff;
+    /* display: block; */
+    width: 31%;
+    height: auto;
+}
+.box-text{
+    padding: 25px;
+}
+/* Needs */
+#needs{
+    padding: 15px
+}
+/* Contacts */
+#contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+#contacts .container{
+    height: auto;
+    color:rgb(255, 255, 255);
+    margin:0;
+    padding: 30px;
+}
+#our-email{
+    padding: 10px;
+}
+#left-box{
+    background-color:rgb(50, 151, 245)
+}
+#right-box{
+    background-color: rgb(48, 47, 47);
+}
+/* Footer */
+footer{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+}
+.creator a{
+    color:rgb(50, 151, 245);
+    text-decoration: none;
+}
+.creator a:visited{
+    color: rgb(50, 151, 245);
+}
+
+@media (max-width: 768px){
+    .content{
+        columns: 1;
+    }
+    #options{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .box{
+        width: 100%;
+        margin:1%;
+    }
+   .container{
+       width: 95%;
+   }
+   #contacts{
+    flex-direction: column;
+   }
+   footer{
+       flex-direction: column;
+       padding:40px;
+       width: 100%;
+   }
+   footer p{
+       margin:auto;
+   }
+}
